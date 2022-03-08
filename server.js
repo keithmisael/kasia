@@ -1,6 +1,9 @@
 // Core modules
 const path = require('path')
 
+// ENV
+require('dotenv').config();
+
 // Express
 const express = require('express');
 const app = express();
