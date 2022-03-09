@@ -2,7 +2,7 @@
 const path = require('path')
 
 // ENV
-require('dotenv').config();
+// require('dotenv').config();
 
 // Express
 const express = require('express');
@@ -20,4 +20,4 @@ app.use(mainRouter)
 app.get('/' , (req, res) => res.render('index'))
 
 // Listen on port
-app.listen(process.env.PORT || 8080)
+app.listen(3000)
