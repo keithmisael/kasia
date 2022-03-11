@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-   <%- include(includes/_head') %>
+  <? php( 'views/templates/head.php' ); ?>
    <link rel="stylesheet" href="styles/services.css">
    <title>Services Kasia Grabara | RMT</title>
 </head>
 
 <body>
-   <%- include('includes/_header') %>
-
+  <? php( 'views/templates/footer.php' ); ?>
    <!-- Services section -->
    <section id="services" class="services">
       <div class="services-container">
@@ -18,7 +17,7 @@
       </div>
    </section>
 
-   <%- include('includes/_footer') %>
+   <? php( 'views/templates/footer.php' ); ?>
 </body>
 
 </html>
