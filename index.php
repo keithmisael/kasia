@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
-  <?php require("views/templates/head.php"); ?>
+  <?php require("templates/head.php"); ?>
+  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/contact.css">
   <title>Kasia Grabara | RMT</title>
 </head>
 
 <body>
-  <?php require("views/templates/header.php"); ?>
+  <?php require("templates/header.php"); ?>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
+   <!-- Hero Section -->
+   <section id="hero" class="hero">
     <div class="hero-wrapper">
       <div class="kasia-headline">
         <!-- Kasia Signature SVG -->
-        <svg width="320" height="80" viewBox="0 0 100 24" id="kasia signature">
+        <svg width="1200" height="auto" viewBox="0 0 100 24" id="kasia-signature">
           <path d="M0.643345 5.83384C0.559702 5.91748 0.371485 5.83384 0.183276 5.66653C0.0159699 5.47832 -0.0467603 5.2692 0.0368964 5.18555C1.41711 3.76352 4.26118 2.42513 7.04252 1.88141C9.42652 1.42134 11.8105 1.58864 13.2116 2.82246C14.9683 4.39088 14.0063 7.25587 11.8314 10.5391C11.8733 10.5391 11.9151 10.5391 11.9569 10.5391C14.8846 8.09236 19.1298 5.14373 24.4206 3.03158C31.2171 0.292072 33.0993 1.04492 33.5175 2.11144C33.7475 2.65516 33.5175 3.21979 33.4339 3.47074L33.392 3.53348C33.3502 3.65895 33.162 3.61712 32.9738 3.47074C32.8065 3.30344 32.681 3.07341 32.7228 2.94794L32.7647 2.8852C32.8483 2.67607 33.0156 2.216 32.911 1.92323C32.681 1.37951 31.1753 1.23312 24.9644 3.72169C20.0709 5.68745 16.0766 8.36422 13.1698 10.6855C13.839 10.9573 14.5082 11.522 15.1565 12.5258C16.7249 14.8889 17.8542 16.3945 19.1717 16.771C20.6146 17.1892 22.3712 16.4782 26.5119 12.6303C26.6164 12.5467 26.8256 12.6512 26.9929 12.8185C27.1602 13.0068 27.202 13.2159 27.1183 13.2995C22.8731 17.2101 21.0329 17.9421 19.4644 17.482C17.7496 16.9801 16.4321 15.2653 14.6546 12.5885C14.0063 11.5847 13.2953 11.1874 12.5843 11.1665C9.59382 13.655 7.94175 15.5999 7.94175 15.5999V15.6208C6.43606 17.3774 4.8049 19.155 3.23648 20.7861C3.17374 20.8907 2.96462 20.807 2.79732 20.6188C2.60911 20.4515 2.54637 20.2215 2.63001 20.1378C4.17752 18.5067 5.80868 16.7291 7.31437 14.9725C7.37711 14.8261 8.56911 12.5467 10.2212 11.2919C10.5349 10.8737 10.8276 10.4554 11.0995 10.0581C13.1907 6.94217 14.2573 4.34905 13.0234 3.26161C11.8942 2.25782 9.76111 2.17417 7.52349 2.61333C4.80489 3.13613 2.00265 4.4327 0.643345 5.83382V5.83384Z" fill="black" />
           <path d="M29.7951 12.6303C29.8788 12.8395 29.816 12.9649 29.6487 12.9231C29.4814 12.8813 29.2723 12.6931 29.1887 12.5049C28.7704 12.1075 27.7457 12.5885 27.3693 12.9022C26.5955 13.5296 26.1564 14.2824 25.9264 15.2444C26.6583 15.0352 28.5613 12.8185 28.5613 12.8185C28.6449 12.7349 28.8332 12.7976 29.0214 12.9858C29.1678 13.1532 29.2514 13.3414 29.1887 13.4459C29.1469 13.5505 28.8959 14.0942 29.0214 14.6797C29.105 15.1816 31.8236 12.9022 31.8654 12.8813C31.9491 12.7976 32.1164 12.6931 32.2837 12.8604C32.451 13.0486 32.4301 13.2159 32.3464 13.2995C30.9662 14.5334 30.1506 15.2653 29.586 15.5581C28.624 16.06 27.8921 15.7672 27.913 14.7425C27.1602 15.4535 26.3864 16.1018 25.9264 15.8927C25.759 15.8299 25.6336 15.7045 25.5081 15.579C25.299 15.3071 25.2153 15.0143 25.2572 14.7007C25.2781 14.4497 25.3617 14.1779 25.4872 13.906C25.7591 13.3204 26.24 12.6722 26.7838 12.233C27.7248 11.4593 29.4396 11.4174 29.7951 12.6303L29.7951 12.6303Z" fill="black" />
           <path d="M31.8444 13.6963C31.7608 13.7799 31.5098 13.9054 31.3425 13.7381C31.1752 13.5499 31.6144 13.1735 31.698 13.0898L33.2665 11.1868C33.5383 10.8941 33.7474 10.7268 33.7474 10.7268C33.8311 10.6431 34.0402 10.7268 34.1866 10.915C34.3539 11.0823 34.4376 11.3123 34.3539 11.396L33.852 11.8769C33.4129 12.3788 32.8273 13.2781 33.0573 14.24C33.1828 14.8465 33.1201 15.3275 32.9528 15.683C32.8482 15.8712 32.7018 16.0176 32.5554 16.143C32.4091 16.2476 32.2418 16.3313 32.0745 16.3731C31.7817 16.4358 31.4889 16.394 31.2589 16.2685C30.0669 15.6621 30.7152 14.491 30.7152 14.4701C30.7779 14.3655 30.9661 14.4073 31.1543 14.5746C31.3425 14.7419 31.4262 14.972 31.3844 15.0765C31.3844 15.0974 31.0916 15.6202 31.1334 15.6411C31.217 15.683 31.3844 15.683 31.5517 15.6411C31.698 15.6202 31.8444 15.5575 31.9699 15.4529C32.0954 15.3693 32.2208 15.2229 32.2836 15.0765C32.43 14.7837 32.4927 14.4073 32.3882 13.9263C32.3882 13.6545 32.1999 13.6336 32.7018 12.7134L31.8444 13.6963Z" fill="black" />
@@ -31,16 +33,16 @@
       </div>
       <div class="hero-text">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-          obcaecati distinctio quasi, soluta vel alias iste.
+          <strong>Registered Massage Therapist.</strong> Serving Toronto and the GTA.
         </p>
-        <a class="btn">Learn more</a>
       </div>
     </div>
+    <div class="kasia-hero-img"></div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="about">
+    <div class="kasia-hero-img"></div>
     <div class="about-text">
       <h3>Kasia Grabara RMT</h3>
       <p>
@@ -50,58 +52,47 @@
         architecto laudantium dolor itaque laboriosam amet quis ea magni,
         soluta hic perferendis rerum.
       </p>
-      <a href="#" class="btn">More about</a>
+
     </div>
   </section>
 
   <!-- Locations Section -->
   <section id="locations" class="locations">
-    <div>
+    <div class="locations-content">
       <div>
         <h3>Treatments Offered</h3>
       </div>
-      <div>
-        <div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" id="car">
-            <path d="M16 6L19 10H21C22.11 10 23 10.89 23 12V15H21C21 15.7956 20.6839 16.5587 20.1213 17.1213C19.5587 17.6839 18.7956 18 18 18C17.2044 18 16.4413 17.6839 15.8787 17.1213C15.3161 16.5587 15 15.7956 15 15H9C9 15.7956 8.68393 16.5587 8.12132 17.1213C7.55871 17.6839 6.79565 18 6 18C5.20435 18 4.44129 17.6839 3.87868 17.1213C3.31607 16.5587 3 15.7956 3 15H1V12C1 10.89 1.89 10 3 10L6 6H16ZM10.5 7.5H6.75L4.86 10H10.5V7.5ZM12 7.5V10H17.14L15.25 7.5H12ZM6 13.5C5.60218 13.5 5.22064 13.658 4.93934 13.9393C4.65804 14.2206 4.5 14.6022 4.5 15C4.5 15.3978 4.65804 15.7794 4.93934 16.0607C5.22064 16.342 5.60218 16.5 6 16.5C6.39782 16.5 6.77936 16.342 7.06066 16.0607C7.34196 15.7794 7.5 15.3978 7.5 15C7.5 14.6022 7.34196 14.2206 7.06066 13.9393C6.77936 13.658 6.39782 13.5 6 13.5ZM18 13.5C17.6022 13.5 17.2206 13.658 16.9393 13.9393C16.658 14.2206 16.5 14.6022 16.5 15C16.5 15.3978 16.658 15.7794 16.9393 16.0607C17.2206 16.342 17.6022 16.5 18 16.5C18.3978 16.5 18.7794 16.342 19.0607 16.0607C19.342 15.7794 19.5 15.3978 19.5 15C19.5 14.6022 19.342 14.2206 19.0607 13.9393C18.7794 13.658 18.3978 13.5 18 13.5Z" fill="black" />
-          </svg>
+      <div class="locations-group">
+        <div class="locations-item">
+          <div class="locations-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" id="car">
+              <path d="M16 6L19 10H21C22.11 10 23 10.89 23 12V15H21C21 15.7956 20.6839 16.5587 20.1213 17.1213C19.5587 17.6839 18.7956 18 18 18C17.2044 18 16.4413 17.6839 15.8787 17.1213C15.3161 16.5587 15 15.7956 15 15H9C9 15.7956 8.68393 16.5587 8.12132 17.1213C7.55871 17.6839 6.79565 18 6 18C5.20435 18 4.44129 17.6839 3.87868 17.1213C3.31607 16.5587 3 15.7956 3 15H1V12C1 10.89 1.89 10 3 10L6 6H16ZM10.5 7.5H6.75L4.86 10H10.5V7.5ZM12 7.5V10H17.14L15.25 7.5H12ZM6 13.5C5.60218 13.5 5.22064 13.658 4.93934 13.9393C4.65804 14.2206 4.5 14.6022 4.5 15C4.5 15.3978 4.65804 15.7794 4.93934 16.0607C5.22064 16.342 5.60218 16.5 6 16.5C6.39782 16.5 6.77936 16.342 7.06066 16.0607C7.34196 15.7794 7.5 15.3978 7.5 15C7.5 14.6022 7.34196 14.2206 7.06066 13.9393C6.77936 13.658 6.39782 13.5 6 13.5ZM18 13.5C17.6022 13.5 17.2206 13.658 16.9393 13.9393C16.658 14.2206 16.5 14.6022 16.5 15C16.5 15.3978 16.658 15.7794 16.9393 16.0607C17.2206 16.342 17.6022 16.5 18 16.5C18.3978 16.5 18.7794 16.342 19.0607 16.0607C19.342 15.7794 19.5 15.3978 19.5 15C19.5 14.6022 19.342 14.2206 19.0607 13.9393C18.7794 13.658 18.3978 13.5 18 13.5Z" fill="black" />
+            </svg>
+          </div>
+          <div class="locations-desc">
+            <h4>Mobile</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              consequuntur sapiente ipsum animi libero velit!
+            </p>
+          </div>
         </div>
-        <div>
-          <h4>Mobile</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            consequuntur sapiente ipsum animi libero velit!
-          </p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" id="house">
-            <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="black" />
-          </svg>
-        </div>
-        <div>
-          <h4>Location</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            consequuntur sapiente ipsum animi libero velit!
-          </p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <svg width="25" height="25" viewBox="0 0 25 25" fill="none" id="lotus">
-            <path d="M15.5815 10.0231C15.3915 7.23307 14.2615 4.51307 12.1415 2.39307C10.0015 4.53307 8.82154 7.25307 8.58154 10.0231C9.87154 10.7031 11.0515 11.5831 12.0815 12.6531C13.1115 11.5931 14.2915 10.7131 15.5815 10.0231ZM12.0815 15.8431C9.93154 12.5631 6.26154 10.3931 2.08154 10.3931C2.08154 20.3931 11.4015 22.2831 12.0815 22.3931C12.7615 22.2731 22.0815 20.3931 22.0815 10.3931C17.9015 10.3931 14.2315 12.5631 12.0815 15.8431Z" fill="#6B3916" />
-          </svg>
-        </div>
-        <div>
-          <h4>Location</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-            consequuntur sapiente ipsum animi libero velit!
-          </p>
+        <div class="locations-item">
+          <div class="locations-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" id="house">
+              <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" fill="black" />
+            </svg>
+          </div>
+          <div class="locations-desc">
+            <h4>Location</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
+              consequuntur sapiente ipsum animi libero velit!
+            </p>
+          </div>
         </div>
       </div>
+      
     </div>
   </section>
 
@@ -117,41 +108,97 @@
         doloremque debitis.
       </p>
     </div>
+    <div class="services-grid">
+      <div class="services-item">
+        <div class="services-item-img swedish"></div>
+        <div class="services-item-content">
+          <h3>Swedish Massage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-img deep"></div>
+        <div class="services-item-content">
+          <h3>Deep Tissue Massage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-img pregnant"></div>
+        <div class="services-item-content">
+          <h3>Pre & Post Natal Massage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-img thai"></div>
+        <div class="services-item-content">
+          <h3>Thai Massage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-img cupping"></div>
+        <div class="services-item-content">
+          <h3>Cupping Therapy</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+          <span>Available in-location only.</span>
+        </div>
+      </div>
+      
+    </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-    <div class="contact-text">
-      <h3>Contact</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-        facilis neque error, similique adipisci impedit!
-      </p>
-    </div>
-    <div class="form-container">
-      <form method="post" action="form.js">
-        <div class="form-control">
-          <label for="Name">Name</label>
-          <input type="text" name="Name" id="" />
-        </div>
-        <div class="form-control">
-          <label for="name">Email</label>
-          <input type="text" name="Name" id="" />
-        </div>
-        <div class="form-control">
-          <label for="phone">Phone</label>
-          <input type="text" name="phone" id="" />
-        </div>
-        <div class="form-control">
-          <label for="message">Message</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-        </div>
-        <button class="btn">Submit</button>
-      </form>
-    </div>
-  </section>
 
-  <?php include('views/templates/footer.php') ?>
+      <div class="contact-text">
+        <h3>Contact</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+          facilis neque error, similique adipisci impedit!
+        </p>
+        <div class="form-container">
+          <form method="post" action="form.php">
+            <div class="form-control">
+              <label for="Name">Name</label>
+              <input type="text" name="Name" id="" />
+            </div>
+            <div class="form-control">
+              <label for="name">Email</label>
+              <input type="email" name="Name" id="" />
+            </div>
+            <div class="form-control">
+              <label for="phone">Phone</label>
+              <input type="tel" name="phone" id="" />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <button class="btn">Submit</button>
+          </form>
+        </div>
+    </div>
+
+    <div>
+      <div class="map-container">
+        <img src="img/map.png" alt="map" class="map-img">
+        <svg id="pin" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 38.3332C37.7899 38.3332 35.6702 37.4552 34.1074 35.8924C32.5446 34.3296 31.6667 32.21 31.6667 29.9998C31.6667 27.7897 32.5446 25.6701 34.1074 24.1073C35.6702 22.5445 37.7899 21.6665 40 21.6665C42.2101 21.6665 44.3298 22.5445 45.8926 24.1073C47.4554 25.6701 48.3333 27.7897 48.3333 29.9998C48.3333 31.0942 48.1178 32.1778 47.699 33.1889C47.2802 34.1999 46.6664 35.1186 45.8926 35.8924C45.1187 36.6662 44.2001 37.28 43.189 37.6988C42.178 38.1176 41.0944 38.3332 40 38.3332V38.3332ZM40 6.6665C33.8116 6.6665 27.8767 9.12483 23.5008 13.5007C19.125 17.8765 16.6667 23.8115 16.6667 29.9998C16.6667 47.4998 40 73.3332 40 73.3332C40 73.3332 63.3333 47.4998 63.3333 29.9998C63.3333 23.8115 60.875 17.8765 56.4992 13.5007C52.1233 9.12483 46.1884 6.6665 40 6.6665V6.6665Z" fill="#F9785B"/>
+          </svg>      
+      </div>
+      <div class="directions">
+        70 Distillery Lane<br>
+        Toronto, ON <br>
+        M5A 0E3 <br>
+      </div>
+    </div>
+</section>
+   
+  <?php require("templates/footer.php"); ?>
+   
+  <script src="app.js"></script>
 </body>
 
 </html>
