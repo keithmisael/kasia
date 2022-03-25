@@ -5,8 +5,9 @@
   <?php require("templates/head.php"); ?>
   
   <link rel="stylesheet" href="/styles/contact.css">
-  <link rel="stylesheet" href="/styles/index.css">
   <link rel="stylesheet" href="/styles/shared.css">
+  <link rel="stylesheet" href="/styles/index.css">
+
   <title>Kasia Grabara | RMT</title>
 </head>
 
