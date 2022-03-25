@@ -85,7 +85,7 @@ section {
 
 .btn {
   background-color: #f9785b;
-  padding: 1rem;
+  padding: 0.8rem;
   color: #333;
   width: 140px;
   text-align: center;
@@ -133,7 +133,7 @@ header {
   padding: 1rem;
   width: 100%;
   animation: fadeIn 1s ease-in-out;
-  background-color: #eee;
+  background-color: #e5e5e5;
   margin-top: 0;
   z-index: 3;
   transition: 1s ease-in-out;
@@ -168,7 +168,7 @@ header {
 
 /* Footer */
 footer {
-  width: inherit;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -230,4 +230,8 @@ footer p {
   .nav-link-mobile {
     display: none;
   }
+}
+
+#kasia-navbar {
+  width: 200px;
 }

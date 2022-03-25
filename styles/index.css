@@ -155,7 +155,19 @@
   margin-top: 1rem;
   padding: 0 1rem;
 }
+table {
+  height: 100%;
+  padding: 0.5rem;
+}
 
+.rates {
+  width: 100%;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: #fff;
+}
  th, tr, td {
   padding: 0.5rem;
   margin: 0;
@@ -174,19 +186,7 @@ th {
   border-bottom: 1px solid black;
 }
 
-table {
-  height: 100%;
-  padding: 0.5rem;
-}
 
-.rates {
-  width: 100%;
-  padding: 1.25rem;
-  border-radius: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: bold;
-  background-color: #fff;
-}
 
 /* Vector signature */
 /* @media (max-width: 1200px) {
