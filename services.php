@@ -4,6 +4,7 @@
 <head>
    <?php require("templates/head.php"); ?>
    <link rel="stylesheet" href="styles/services.css">
+   <link rel="stylesheet" href="styles/index.css">
    <title>Services Kasia Grabara | RMT</title>
 </head>
 
@@ -20,6 +21,61 @@
 </svg>
 
          </div>
+
+ <!-- Services section -->
+ <section id="services" class="services">
+    <div class="services-container">
+      <h3>Services</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi
+        sapiente libero odit consequuntur tempore. Ut iste optio praesentium!
+        Ut, ipsa laboriosam assumenda hic veritatis eum. Dignissimos ipsa
+        reiciendis quo. Nisi illo distinctio enim velit nesciunt amet tenetur,
+        doloremque debitis.
+      </p>
+    </div>
+    <div class="services-grid">
+      <div class="services-item">
+        <div class="services-item-img swedish"></div>
+        <div class="services-item-content">
+          <h3>Swedish Massage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-img deep"></div>
+        <div class="services-item-content">
+          <h3>Deep Tissue Massage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-img pregnant"></div>
+        <div class="services-item-content">
+          <h3>Pre & Post Natal Massage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-img thai"></div>
+        <div class="services-item-content">
+          <h3>Thai Massage</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+        </div>
+      </div>
+      <div class="services-item">
+        <div class="services-item-img cupping"></div>
+        <div class="services-item-content">
+          <h3>Cupping Therapy</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique?</p>
+          <span>Available in-location only.</span>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
          <h3>Services</h3>
          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quasi sapiente libero odit consequuntur tempore. Ut iste optio praesentium! Ut, ipsa laboriosam assumenda hic veritatis eum. Dignissimos ipsa reiciendis quo. Nisi illo distinctio enim velit nesciunt amet tenetur, doloremque debitis.</p>
       </div>
