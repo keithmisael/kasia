@@ -1,0 +1,83 @@
+/* Contact */
+.contact {
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row !important;
+}
+
+.contact-text {
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-header {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.contact-text
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.35rem;
+}
+
+input {
+  height: 2rem;
+  border: 1px solid #888;
+  padding: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  border-radius: 0.25rem;
+  background-color: #eee;
+}
+
+textarea {
+  border: 1px solid #888;
+   background-color: #eee;
+  border-radius: 0.25rem;
+  resize: none;
+  padding: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+input,
+textarea {
+  width: 80%;
+}
+
+.contact-text {
+  padding-right: 4rem;
+}
+
+.contact-text h3 {
+  font-size: 2.5rem;
+  letter-spacing: -2.5px;
+}
+
+.contact-text p {
+  font-size: 1rem;
+  padding-right: 2rem;
+}
+
+.map-img {
+  width: 30em;
+  height: 30em;
+  border-radius: 0.5rem;
+}
+
+.map-container {
+  position: relative;
+}
+
+#pin {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  cursor: pointer;
+}
